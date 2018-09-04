@@ -8,5 +8,9 @@ def index():
     return render_template('index.html')
     #return '<h1>Hello world!</h1>'
 
+@app.route('/hello')
+def hello():
+    return render_template('hello.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
